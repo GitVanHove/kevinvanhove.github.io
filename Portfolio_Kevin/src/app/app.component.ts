@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import AOS from 'aos';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
@@ -21,8 +21,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
   styleUrl: './app.component.css',
   standalone: true
 })
-export class AppComponent implements AfterViewInit {
-  ngAfterViewInit(): void {
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
     AOS.init(
       {
         duration: 600,
