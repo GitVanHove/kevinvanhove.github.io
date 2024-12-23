@@ -1,39 +1,61 @@
 <section id="portfolio" class="portfolio section">
 
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Portfolio</h2>
-      <p>Here's a collection of some of my personal projects, some finished some under contruction! Take a look and let me know what you think.</p>
-    </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>Here's a collection of some of my personal projects, some finished some under construction! Take a look and let me know what you think.</p>
+  </div>
 
-    <div class="container">
+  <div class="container">
 
-      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    <!-- Portfolio Filters -->
+    <ul class="portfolio-filters" data-aos="fade-up" data-aos-delay="100">
+      <li 
+        [class.filter-active]="selectedFilter === '*'" 
+        (click)="setFilter('*')">
+        All
+      </li>
+      <li 
+        [class.filter-active]="selectedFilter === 'filter-web'" 
+        (click)="setFilter('filter-web')">
+        Web
+      </li>
+      <li 
+        [class.filter-active]="selectedFilter === 'filter-software'" 
+        (click)="setFilter('filter-software')">
+        Software
+      </li>
+      <li 
+        [class.filter-active]="selectedFilter === 'filter-misc'" 
+        (click)="setFilter('filter-misc')">
+        Games
+      </li>
+      <li 
+        [class.filter-active]="selectedFilter === 'filter-hardware'" 
+        (click)="setFilter('filter-hardware')">
+        Hardware
+      </li>
+    </ul>
 
-        <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-web">Web</li>
-          <li data-filter=".filter-software">Software</li>
-          <li data-filter=".filter-misc">Games</li>
-          <li data-filter=".filter-hardware">Hardware</li>
-        </ul><!-- End Portfolio Filters -->
-
-        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-            <img src="assets/img/portfolio/este_Startpage.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Este  | Website</h4>
-              <p>Self made website for landscaping architect</p>
-              <a href="assets/img/portfolio/este_Startpage.png" title="Este website" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-            </div>
-          </div><!-- End Portfolio Item -->
-
-        </div><!-- End Portfolio Container -->
-
+    <!-- Portfolio Items -->
+    <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+      <div 
+        class="col-lg-4 col-md-6 portfolio-item" 
+        *ngFor="let item of getFilteredItems()">
+        <img [src]="item.image" class="img-fluid" [alt]="item.title">
+        <div class="portfolio-info">
+          <h4>{{ item.title }}</h4>
+          <p>{{ item.description }}</p>
+          <a [href]="item.image" title="{{ item.title }}" data-gallery="portfolio-gallery" class="glightbox preview-link">
+            <i class="bi bi-zoom-in"></i>
+          </a>
+          <a [href]="item.link" title="More Details" class="details-link">
+            <i class="bi bi-link-45deg"></i>
+          </a>
+        </div>
       </div>
-
     </div>
 
-  </section>
+  </div>
+
+</section>
