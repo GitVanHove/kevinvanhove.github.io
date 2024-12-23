@@ -1,23 +1,15 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import AOS from 'aos';
 import { HeaderComponent } from './components/header/header.component';
-import { HeroComponent } from './components/hero/hero.component';
-import { SkillsComponent } from './components/skills/skills.component';
-import { AboutComponent } from './components/about/about.component';
-import { ResumeComponent } from './components/resume/resume.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   imports: [
     HeaderComponent,
-    HeroComponent,
-    SkillsComponent,
-    AboutComponent,
-    ResumeComponent,
-    PortfolioComponent,
-    FooterComponent
+    FooterComponent,
+    RouterOutlet
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
