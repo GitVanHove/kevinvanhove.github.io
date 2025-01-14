@@ -15,7 +15,7 @@ export class PortfolioComponent {
       description: 'Self made website for landscaping architect',
       image: 'assets/img/portfolio/este_Startpage.png',
       category: 'filter-web',
-      link: 'portfolio-details.html'
+      link: 'detail/1'
     },
     {
       title: 'Game Project',
