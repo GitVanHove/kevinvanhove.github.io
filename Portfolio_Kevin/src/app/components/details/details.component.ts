@@ -1,10 +1,11 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { NgFor } from '@angular/common';
+import { CommonModule } from '@angular/common';
+import * as portfolioData from '../../../assets/content/portfolio.json';
 
 @Component({
   selector: 'app-details',
-  imports: [NgFor],
+  imports: [ CommonModule],
   templateUrl: './details.component.html',
   styleUrl: './details.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -15,28 +16,18 @@ export class DetailsComponent {
 
   constructor(private route: ActivatedRoute) {}
 
+  portfolioData: any = (portfolioData as any).default; // Access the JSON content
+  projectDetails: any;
 
-  /*swiperConfig = {
-    loop: true,
-    speed: 600,
-    autoplay: {
-      delay: 5000,
-    },
-    navigation: true,
-    pagination: {
-      clickable: true,
-    },
-  };*/
-
-  slides = [
-    { image: '/assets/img/portfolio/app-1.jpg' },
-    { image: '/assets/img/portfolio/product-1.jpg' },
-    { image: '/assets/img/portfolio/branding-1.jpg' },
-    { image: '/assets/img/portfolio/books-1.jpg' },
-  ];
+  
 
   ngOnInit() {
-    this.itemId = this.route.snapshot.paramMap.get('id'); // Get the dynamic ID
+    console.log(this.itemId)
+    this.itemId = this.route.snapshot.paramMap.get('id');
+    this.projectDetails = this.portfolioData.portfolioDetails.find((item: any) => item.id === 1);
+
+    
   }
+
 
 }

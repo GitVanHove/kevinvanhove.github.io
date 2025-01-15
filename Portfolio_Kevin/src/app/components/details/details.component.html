@@ -25,7 +25,7 @@
           pagination-clickable="true"
           class="portfolio-details-slider"
       >
-        <swiper-slide swiperSlide *ngFor="let slide of slides" lazy="true" >
+        <swiper-slide swiperSlide *ngFor="let slide of projectDetails.slides" >
             <img [src]="slide.image" alt="" >
         </swiper-slide>
           <div class="swiper-button-prev" slot="navigation"></div>
@@ -37,12 +37,9 @@
 
         <div class="col-lg-8" data-aos="fade-up">
           <div class="portfolio-description">
-            <h2>This is an example of portfolio details</h2>
-            <p>
-              Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-            </p>
-            <p>
-              Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.
+            <h2>{{projectDetails.title}}</h2>
+            <p *ngfor="let text of projectDetails.description">
+              {{text}}
             </p>
 
             <div class="testimonial-item">
@@ -73,11 +70,12 @@
           <div class="portfolio-info">
             <h3>Project information</h3>
             <ul>
-              <li><strong>Category</strong> Web design</li>
-              <li><strong>Client</strong> ASU Company</li>
-              <li><strong>Project date</strong> 01 March, 2020</li>
-              <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
-              <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+              <li><strong>Category</strong>{{projectDetails.projectInfo.category}}</li>
+              <li><strong>Client</strong>{{projectDetails.projectInfo.client}}</li>
+              <li><strong>Project date</strong>{{projectDetails.projectInfo.date}}</li>
+              <li><strong>Status</strong>{{projectDetails.projectInfo.status}}</li>
+              <li><strong>Project Git</strong> <a href="{{projectDetails.projectInfo.githubUrl}}">{{projectDetails.projectInfo.category}}</a></li>
+              <li><a href="{{projectDetails.projectInfo.url}}" class="btn-visit align-self-start">Visit Website</a></li>
             </ul>
           </div>
         </div>
