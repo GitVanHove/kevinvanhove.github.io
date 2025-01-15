@@ -13,75 +13,83 @@
 
   <!-- Portfolio Details Section -->
   <section id="portfolio-details" class="portfolio-details section">
-
     <div class="container" data-aos="fade-up">
-
       <swiper-container
-          loop = "true"
-          speed = "600"
-          navigation="true"
-          pagination = "true"
-          autoplay-delay="5000"
-          pagination-clickable="true"
-          class="portfolio-details-slider"
+        loop="true"
+        speed="600"
+        navigation="true"
+        pagination="true"
+        autoplay-delay="5000"
+        pagination-clickable="true"
+        class="portfolio-details-slider"
       >
-        <swiper-slide swiperSlide *ngFor="let slide of projectDetails.slides" >
-            <img [src]="slide.image" alt="" >
+        <swiper-slide swiperSlide *ngFor="let slide of projectDetails.slides">
+          <img [src]="slide.image" alt="">
         </swiper-slide>
-          <div class="swiper-button-prev" slot="navigation"></div>
-          <div class="swiper-button-next" slot="navigation"></div>
-          <div class="swiper-pagination" slot="pagination"></div>
+        <div class="swiper-button-prev" slot="navigation"></div>
+        <div class="swiper-button-next" slot="navigation"></div>
+        <div class="swiper-pagination" slot="pagination"></div>
       </swiper-container>
-
+  
       <div class="row justify-content-between gy-4 mt-4">
-
         <div class="col-lg-8" data-aos="fade-up">
           <div class="portfolio-description">
-            <h2>{{projectDetails.title}}</h2>
+            <h2>{{ projectDetails.title }}</h2>
+  
             <p *ngFor="let text of projectDetails.description">
-              {{text}}
+              {{ text }}
             </p>
-
-            <div class="testimonial-item">
+  
+            <!-- Conditional Testimonial Rendering -->
+            <div *ngIf="projectDetails.testimonial?.quote" class="testimonial-item">
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                <span>{{ projectDetails.testimonial.quote }}</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
-              <div>
-                <img src="/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+              <div *ngIf="projectDetails.testimonial?.image">
+                <img [src]="projectDetails.testimonial.image" class="testimonial-img" alt="">
               </div>
+              <h3 *ngIf="projectDetails.testimonial?.name">{{ projectDetails.testimonial.name }}</h3>
+              <h4 *ngIf="projectDetails.testimonial?.role">{{ projectDetails.testimonial.role }}</h4>
             </div>
-
-            <p>
-              Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt assumenda tempore. Delectus voluptas necessitatibus est.
+  
+            <p *ngFor="let text of projectDetails.additionalContent">
+              {{ text }}
             </p>
-
-            <p>
-              Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero. Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui nesciunt.
-            </p>
-
           </div>
         </div>
-
+  
         <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
           <div class="portfolio-info">
             <h3>Project information</h3>
             <ul>
-              <li><strong>Category</strong>{{projectDetails.projectInfo.category}}</li>
-              <li><strong>Client</strong>{{projectDetails.projectInfo.client}}</li>
-              <li><strong>Project date</strong>{{projectDetails.projectInfo.date}}</li>
-              <li><strong>Status</strong>{{projectDetails.projectInfo.status}}</li>
-              <li><strong>Project Git</strong> <a href="{{projectDetails.projectInfo.githubUrl}}">{{projectDetails.projectInfo.category}}</a></li>
-              <li><a href="{{projectDetails.projectInfo.url}}" class="btn-visit align-self-start">Visit Website</a></li>
+              <li *ngIf="projectDetails.projectInfo?.category">
+                <strong>Category:</strong> {{ projectDetails.projectInfo.category }}
+              </li>
+              <li *ngIf="projectDetails.projectInfo?.client">
+                <strong>Client:</strong> {{ projectDetails.projectInfo.client }}
+              </li>
+              <li *ngIf="projectDetails.projectInfo?.date">
+                <strong>Project date:</strong> {{ projectDetails.projectInfo.date }}
+              </li>
+              <li *ngIf="projectDetails.projectInfo?.status">
+                <strong>Status:</strong> {{ projectDetails.projectInfo.status }}
+              </li>
+              <li *ngIf="projectDetails.projectInfo?.githubUrl">
+                <strong>Project Git:</strong>
+                <a [href]="projectDetails.projectInfo.githubUrl">
+                  {{ projectDetails.projectInfo.githubUrl }}
+                </a>
+              </li>
+              <li *ngIf="projectDetails.projectInfo?.url">
+                <a [href]="projectDetails.projectInfo.url" class="btn-visit align-self-start">
+                  Visit Website
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-
       </div>
-
     </div>
-
-  </section><!-- /Portfolio Details Section -->
+  </section>

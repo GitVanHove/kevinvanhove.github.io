@@ -6,26 +6,24 @@
       "bannerText": "Self-made website for a landscaping architect",
       "description": [
         "For one of my classes, I was asked to explore new technologies and try to find a practical use for them. I chose Jamstack as my research topic. Jamstack is an architecture designed to make the web faster, more secure, and easier to scale. It builds on many of the tools and workflows that developers love, bringing maximum productivity.",
-        "The core principles of pre-rendering and decoupling enable sites and applications to be delivered with greater confidence and resilience than ever before.",
-        "The stack used in this project included React.js (JavaScript) for the logic, Tailwind CSS and HTML for styling, Gatsby (an open-source React-based static site generator), and GraphQL to mimic a sort of database for a static site."
+        "The core principles of pre-rendering and decoupling enable sites and applications to be delivered with greater confidence and resilience than ever before.The stack used in this project included React.js (JavaScript) for the logic, Tailwind CSS and HTML for styling, Gatsby (an open-source React-based static site generator), and GraphQL to mimic a sort of database for a static site."
       ],
       "testimonial": {
-        "quote": "Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.",
-        "image": "/assets/img/testimonials/testimonials-2.jpg",
-        "name": "Eline Steyaert",
-        "role": "Landscape Architect"
+        "quote": "",
+        "image": "",
+        "name": "",
+        "role": ""
       },
       "additionalContent": [
-        "The website is hosted on Netlify and includes a functioning Netlify Content Manager, where pages and content can be edited in a user-friendly way.",
-        "This project was made with a small landscaping architect (Este) in mind. Overall, myself, the client, and my teachers were quite pleased with the outcome.",
-        "This was one of the first personal websites I made all the way to production, and it was quite the learning experience.",
-        "Looking back, there is much I would change and do differently now, but that's what learning is for."
+        "The website is hosted on Netlify and includes a functioning Netlify Content Manager, where pages and content can be edited in a user-friendly way. And this project was made with a small landscaping architect (Este) in mind. Overall, myself, the client, and my teachers were quite pleased with the outcome.",
+        "This was one of the first personal websites I made all the way to production, and it was quite the learning experience. Looking back, there is much I would change and do differently now, but that's what learning is for."
       ],
       "slides": [
-        { "image": "/assets/img/portfolio/app-1.jpg" },
-        { "image": "/assets/img/portfolio/product-1.jpg" },
-        { "image": "/assets/img/portfolio/branding-1.jpg" },
-        { "image": "/assets/img/portfolio/books-1.jpg" }
+        { "image": "/assets/img/portfolio/Este/EsteFrontPage.png" },
+        { "image": "/assets/img/portfolio/Este/EsteProjectPage.png" },
+        { "image": "/assets/img/portfolio/Este/EsteExampleProject.png" },
+        { "image": "/assets/img/portfolio/Este/EsteExampleFilter.png" },
+        { "image": "/assets/img/portfolio/Este/EsteExampleAboutPage.png" }
       ],
       "projectInfo": {
         "category": "Web Design",
