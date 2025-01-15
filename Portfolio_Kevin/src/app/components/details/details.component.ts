@@ -22,11 +22,8 @@ export class DetailsComponent {
   
 
   ngOnInit() {
-    console.log(this.itemId)
     this.itemId = this.route.snapshot.paramMap.get('id');
     this.projectDetails = this.portfolioData.portfolioDetails.find((item: any) => item.id === 1);
-
-    
   }
 
 
