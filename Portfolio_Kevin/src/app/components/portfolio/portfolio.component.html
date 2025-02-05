@@ -35,6 +35,11 @@
         (click)="setFilter('filter-hardware')">
         Hardware
       </li>
+      <li 
+        [class.filter-active]="selectedFilter === 'filter-AI'" 
+        (click)="setFilter('filter-AI')">
+        AI
+      </li>
     </ul>
 
     <!-- Portfolio Items -->

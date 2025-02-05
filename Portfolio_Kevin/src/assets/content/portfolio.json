@@ -34,6 +34,114 @@
         "githubUrl": "https://github.com/GitVanHove/SiteEline",
         "buttonText": "Visit Website"
       }
+    },
+    {
+      "id": 2,
+      "title": "Game Project",
+      "bannerText": "A fun platformer, a very first test project.",
+      "description": [
+        "For one of my classes, I was asked to explore new technologies and try to find a practical use for them. I chose Jamstack as my research topic. Jamstack is an architecture designed to make the web faster, more secure, and easier to scale. It builds on many of the tools and workflows that developers love, bringing maximum productivity.",
+        "The core principles of pre-rendering and decoupling enable sites and applications to be delivered with greater confidence and resilience than ever before.The stack used in this project included React.js (JavaScript) for the logic, Tailwind CSS and HTML for styling, Gatsby (an open-source React-based static site generator), and GraphQL to mimic a sort of database for a static site."
+      ],
+      "testimonial": {
+        "quote": "",
+        "image": "",
+        "name": "",
+        "role": ""
+      },
+      "additionalContent": [
+        "The website is hosted on Netlify and includes a functioning Netlify Content Manager, where pages and content can be edited in a user-friendly way. And this project was made with a small landscaping architect (Este) in mind. Overall, myself, the client, and my teachers were quite pleased with the outcome.",
+        "This was one of the first personal websites I made all the way to production, and it was quite the learning experience. Looking back, there is much I would change and do differently now, but that's what learning is for."
+      ],
+      "slides": [
+        { "image": "/assets/img/portfolio/Este/EsteFrontPage.png" },
+        { "image": "/assets/img/portfolio/Este/EsteProjectPage.png" },
+        { "image": "/assets/img/portfolio/Este/EsteExampleProject.png" },
+        { "image": "/assets/img/portfolio/Este/EsteExampleFilter.png" },
+        { "image": "/assets/img/portfolio/Este/EsteExampleAboutPage.png" }
+      ],
+      "projectInfo": {
+        "category": "Games",
+        "client": "",
+        "date": "Okt, 2024",
+        "status": "Finished",
+        "url": "",
+        "githubUrl": "https://github.com/GitVanHove/test-platformer-game",
+        "buttonText": ""
+      }
+    },
+    {
+      "id": 3,
+      "title": "AI Project | Stable Diffusion",
+      "bannerText": "ComfyUI workflows and Stable Diffusion",
+      "description": [
+        "It all started as a simple idea: making my own banner. But, as things often go, it spiraled into a little side project of AI-generated art. :p",
+        "I wanted to make my own content using free software (I'm cheap) cause it can be hard to find especially with me in it, i don't like pictures nor can i make them. What started as a quick experiment turned into a fun journey of prompt engineering, fine-tuning styles, and occasionally battling AI-generated hands that looked... well, cursed.",
+        "Running into ComfyUI with it's complex node system and stable diffusion i was given that option. There where easier tools to use like Automatic1111 but my ego forced me to use the hard one."
+      ],
+      "testimonial": {
+        "quote": "",
+        "image": "",
+        "name": "",
+        "role": ""
+      },
+      "additionalContent": [
+        "For this project, I used Stable Diffusion with ComfyUI as i mentioned, diving deep into prompt crafting, model selection from Civitai (Dodging NSFW content like a pro), and creating my own workflows using ComfyUI's complex node system.",
+        "What I learned: AI art is fun, unpredictable, and surprisingly addictive (It's like a slot machine, i kept pressing that button wondering what would come out). It also reinforced that programming isn't just about logic—it’s about creativity, experimentation, and using 2000+ years of technical evolution to render a cat and goose playing cards or hot woman.",
+        "In the end, I got more than just a banner—I got a deeper appreciation for AI-generated art and a cool fun new hobby. Would I do it again? Absolutely! Will i go bankrupt buying myself a better GPU, unfortunatly, probably and eventually.... yes :(."
+      ],
+      "slides": [
+        { "image": "/assets/img/portfolio/StableDiffusionAI/comfyUI1.png" },
+        { "image": "/assets/img/portfolio/StableDiffusionAI/comfyUI2.png" },
+        { "image": "/assets/img/portfolio/StableDiffusionAI/comfyUI3.png" },
+        { "image": "/assets/img/portfolio/StableDiffusionAI/comfyUI4.png" },
+        { "image": "/assets/img/portfolio/StableDiffusionAI/comfyUI5.png" },
+        { "image": "/assets/img/portfolio/StableDiffusionAI/comfyUI6.png" }
+      ],
+      "projectInfo": {
+        "category": "AI",
+        "client": "Myself :)",
+        "date": "Jan, 2025",
+        "status": "Finished",
+        "url": "",
+        "githubUrl": "",
+        "buttonText": ""
+      }
+    },
+    {
+      "id": 4,
+      "title": ".NET",
+      "bannerText": ".NET powered back-end for a hypothetical renting business",
+      "description": [
+        "For one of my classes, I was asked to explore new technologies and try to find a practical use for them. I chose Jamstack as my research topic. Jamstack is an architecture designed to make the web faster, more secure, and easier to scale. It builds on many of the tools and workflows that developers love, bringing maximum productivity.",
+        "The core principles of pre-rendering and decoupling enable sites and applications to be delivered with greater confidence and resilience than ever before.The stack used in this project included React.js (JavaScript) for the logic, Tailwind CSS and HTML for styling, Gatsby (an open-source React-based static site generator), and GraphQL to mimic a sort of database for a static site."
+      ],
+      "testimonial": {
+        "quote": "",
+        "image": "",
+        "name": "",
+        "role": ""
+      },
+      "additionalContent": [
+        "The website is hosted on Netlify and includes a functioning Netlify Content Manager, where pages and content can be edited in a user-friendly way. And this project was made with a small landscaping architect (Este) in mind. Overall, myself, the client, and my teachers were quite pleased with the outcome.",
+        "This was one of the first personal websites I made all the way to production, and it was quite the learning experience. Looking back, there is much I would change and do differently now, but that's what learning is for."
+      ],
+      "slides": [
+        { "image": "/assets/img/portfolio/Este/EsteFrontPage.png" },
+        { "image": "/assets/img/portfolio/Este/EsteProjectPage.png" },
+        { "image": "/assets/img/portfolio/Este/EsteExampleProject.png" },
+        { "image": "/assets/img/portfolio/Este/EsteExampleFilter.png" },
+        { "image": "/assets/img/portfolio/Este/EsteExampleAboutPage.png" }
+      ],
+      "projectInfo": {
+        "category": "Software",
+        "client": "",
+        "date": "Sep, 2024",
+        "status": "Ongoing",
+        "url": "",
+        "githubUrl": "https://github.com/GitVanHove/SiteEline",
+        "buttonText": ""
+      }
     }
   ]
 }

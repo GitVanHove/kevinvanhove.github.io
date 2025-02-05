@@ -23,7 +23,8 @@ export class DetailsComponent {
 
   ngOnInit() {
     this.itemId = this.route.snapshot.paramMap.get('id');
-    this.projectDetails = this.portfolioData.portfolioDetails.find((item: any) => item.id === 1);
+    console.log(this.itemId);
+    this.projectDetails = this.portfolioData.portfolioDetails.find((item: any) => item.id == this.itemId);
   }
 
 

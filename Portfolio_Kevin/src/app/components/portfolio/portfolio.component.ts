@@ -19,17 +19,24 @@ export class PortfolioComponent {
     },
     {
       title: 'Game Project',
-      description: 'An indie game in development.',
+      description: 'A fun platformer, a very first test project.',
       image: 'assets/img/portfolio/game.png',
       category: 'filter-misc',
-      link: '#'
+      link: 'detail/2'
     },
     {
-      title: 'IoT Project',
-      description: 'A hardware project for smart homes.',
-      image: 'assets/img/portfolio/iot.png',
-      category: 'filter-hardware',
-      link: '#'
+      title: 'AI Project | Stable diffusion',
+      description: 'Comfyui workflows and stabel diffusion',
+      image: 'assets/img/portfolio/comfyui_start.png',
+      category: 'filter-AI',
+      link: 'detail/3'
+    },
+    {
+      title : '.NET',
+      description: '.NET powered back-end for a hypothetical renting business',
+      image: 'assets/img/portfolio/.NET.png',
+      category: 'filter-software',
+      link: 'detail/4'
     }
   ];
 
