@@ -37,11 +37,11 @@
     },
     {
       "id": 2,
-      "title": "Game Project",
-      "bannerText": "A fun platformer, a very first test project.",
+      "title": "Godot Platformer",
+      "bannerText": "A platformer i guess :p",
       "description": [
-        "For one of my classes, I was asked to explore new technologies and try to find a practical use for them. I chose Jamstack as my research topic. Jamstack is an architecture designed to make the web faster, more secure, and easier to scale. It builds on many of the tools and workflows that developers love, bringing maximum productivity.",
-        "The core principles of pre-rendering and decoupling enable sites and applications to be delivered with greater confidence and resilience than ever before.The stack used in this project included React.js (JavaScript) for the logic, Tailwind CSS and HTML for styling, Gatsby (an open-source React-based static site generator), and GraphQL to mimic a sort of database for a static site."
+        "Behold! My first-ever platformer, built in Godot, here platforms defy gravity (sometimes unintentionally), and the laws of physics are more like friendly suggestions.",
+        "This started as a simple test project, but like all great things (or at least mildly entertaining ones), it grew into something bigger. Well not that big but it gave me ideas for bigger things to do later."
       ],
       "testimonial": {
         "quote": "",
@@ -50,15 +50,15 @@
         "role": ""
       },
       "additionalContent": [
-        "The website is hosted on Netlify and includes a functioning Netlify Content Manager, where pages and content can be edited in a user-friendly way. And this project was made with a small landscaping architect (Este) in mind. Overall, myself, the client, and my teachers were quite pleased with the outcome.",
-        "This was one of the first personal websites I made all the way to production, and it was quite the learning experience. Looking back, there is much I would change and do differently now, but that's what learning is for."
+        "The game features classic platforming mechanics jump on thing, jump on enemies, collect coins and even fun music :).",
+        "While originally just a learning experiment, this project has become a playground for ideas—new levels, wacky power-ups, and maybe even a plot some day(or at least some text that pretends to be one). But i did learn alot, like tweening, parralax backgrounds how to animate sprites etc.",
+        "I expect to update this or perhaps start again in the future with bigger ambitions, but this was my first attempt at making a game (well not my first but the first i thought worth to put on GIT).",
+        "With my now newely acquired skills in AI, ill be able to cover some of my lack luster art skills. We will see what the future holds."
       ],
       "slides": [
-        { "image": "/assets/img/portfolio/Este/EsteFrontPage.png" },
-        { "image": "/assets/img/portfolio/Este/EsteProjectPage.png" },
-        { "image": "/assets/img/portfolio/Este/EsteExampleProject.png" },
-        { "image": "/assets/img/portfolio/Este/EsteExampleFilter.png" },
-        { "image": "/assets/img/portfolio/Este/EsteExampleAboutPage.png" }
+        { "image": "/assets/img/portfolio/GodotGame/MainScene.png" },
+        { "image": "/assets/img/portfolio/GodotGame/startScreen.png" },
+        { "image": "/assets/img/portfolio/GodotGame/collectinggold.png" }
       ],
       "projectInfo": {
         "category": "Games",
@@ -91,6 +91,7 @@
         "In the end, I got more than just a banner—I got a deeper appreciation for AI-generated art and a cool fun new hobby. Would I do it again? Absolutely! Will i go bankrupt buying myself a better GPU, unfortunatly, probably and eventually.... yes :(."
       ],
       "slides": [
+        { "image": "/assets/img/portfolio/StableDiffusionAI/workflow.png" },
         { "image": "/assets/img/portfolio/StableDiffusionAI/comfyUI1.png" },
         { "image": "/assets/img/portfolio/StableDiffusionAI/comfyUI2.png" },
         { "image": "/assets/img/portfolio/StableDiffusionAI/comfyUI3.png" },
@@ -108,30 +109,28 @@
         "buttonText": ""
       }
     },
-    {
+    {  
       "id": 4,
-      "title": ".NET",
-      "bannerText": ".NET powered back-end for a hypothetical renting business",
+      "title": "Apartment Rental API (Or: How I Accidentally Became a Landlord)",
+      "bannerText": "A .NET backend for managing apartment rentals—no front-end, no problem!*",
       "description": [
-        "For one of my classes, I was asked to explore new technologies and try to find a practical use for them. I chose Jamstack as my research topic. Jamstack is an architecture designed to make the web faster, more secure, and easier to scale. It builds on many of the tools and workflows that developers love, bringing maximum productivity.",
-        "The core principles of pre-rendering and decoupling enable sites and applications to be delivered with greater confidence and resilience than ever before.The stack used in this project included React.js (JavaScript) for the logic, Tailwind CSS and HTML for styling, Gatsby (an open-source React-based static site generator), and GraphQL to mimic a sort of database for a static site."
+        "This was my first brave dive into the world of .NET Core, where I attempted to build a backend system for managing apartment rentals in a building. Featuring API controllers, Entity Framework Core, and a database (nice).",
+        "Currently, it’s just a backend—no front-end yet, but hey, who needs a UI when you have beautifully structured JSON responses? Right? ...Right?"
       ],
       "testimonial": {
-        "quote": "",
-        "image": "",
-        "name": "",
-        "role": ""
+        "quote": "It tracks apartments, tenants, and leases. If only it could also pay my rent....",
+        "image": "/assets/img/portfolio/.NET/testimonials-3.jpg",
+        "name": "A Developer in Debt",
+        "role": "Backend Developer"
       },
       "additionalContent": [
-        "The website is hosted on Netlify and includes a functioning Netlify Content Manager, where pages and content can be edited in a user-friendly way. And this project was made with a small landscaping architect (Este) in mind. Overall, myself, the client, and my teachers were quite pleased with the outcome.",
-        "This was one of the first personal websites I made all the way to production, and it was quite the learning experience. Looking back, there is much I would change and do differently now, but that's what learning is for."
-      ],
+        "This project handles apartment listings, tenants, and lease agreements using .NET Core, DTOs for clean data handling, and EF Core for database management. Everything is neatly organized and, most importantly, doesn’t catch fire (yet).",
+        "Then came billing, payments, and the realization that I have no idea how that stuff works. So now I’m probably starting over—this time with a better plan (and maybe some research on how actual rental systems handle money). It would also help if my father gave me more info besides 'site where people can rent stuff', UI/UX is a nightmare i might wake up from one day.",
+        "Will it ever have a front-end? Probably. Will it be rewritten from scratch before then? Almost definitely. Stay tuned for version 2.0: Now With Slightly More Clarity!"
+      ]
+     ,
       "slides": [
-        { "image": "/assets/img/portfolio/Este/EsteFrontPage.png" },
-        { "image": "/assets/img/portfolio/Este/EsteProjectPage.png" },
-        { "image": "/assets/img/portfolio/Este/EsteExampleProject.png" },
-        { "image": "/assets/img/portfolio/Este/EsteExampleFilter.png" },
-        { "image": "/assets/img/portfolio/Este/EsteExampleAboutPage.png" }
+        { "image": "/assets/img/portfolio/.NET/swaggerUI.png" }
       ],
       "projectInfo": {
         "category": "Software",

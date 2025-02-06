@@ -18,9 +18,9 @@ export class PortfolioComponent {
       link: 'detail/1'
     },
     {
-      title: 'Game Project',
+      title: 'Godot Platformer',
       description: 'A fun platformer, a very first test project.',
-      image: 'assets/img/portfolio/game.png',
+      image: 'assets/img/portfolio/MainScene.png',
       category: 'filter-misc',
       link: 'detail/2'
     },
@@ -34,7 +34,7 @@ export class PortfolioComponent {
     {
       title : '.NET',
       description: '.NET powered back-end for a hypothetical renting business',
-      image: 'assets/img/portfolio/.NET.png',
+      image: 'assets/img/portfolio/swaggerUI.png',
       category: 'filter-software',
       link: 'detail/4'
     }
